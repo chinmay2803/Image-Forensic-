@@ -1,0 +1,125 @@
+/* ===============================
+   GLOBAL STYLES
+================================= */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6; /* Tailwind gray-100 */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* ===============================
+   UPLOAD AREA
+================================= */
+.upload-area {
+    border: 2px dashed #4f46e5; /* indigo-600 */
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+}
+.upload-area.dragover {
+    background-color: #eef2ff; /* Tailwind indigo-100 */
+    border-color: #6366f1; /* Tailwind indigo-500 */
+}
+
+/* ===============================
+   IMAGE PREVIEW
+================================= */
+#preview, .result-image {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ===============================
+   LOADING TEXT
+================================= */
+.loading {
+    display: none;
+    text-align: center;
+    font-weight: 600;
+    color: #4f46e5; /* indigo-600 */
+}
+
+/* ===============================
+   FORM ELEMENTS
+================================= */
+select, input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #d1d5db; /* Tailwind gray-300 */
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+select:focus, input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(99,102,241,0.2); /* indigo-500 shadow */
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+button {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+button:hover {
+    transform: translateY(-1px);
+}
+
+/* ===============================
+   RESULT CARD
+================================= */
+.card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+/* Techniques tags */
+.techniques span {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #e0e7ff; /* Tailwind indigo-100 */
+    color: #4f46e5; /* indigo-600 */
+    font-weight: 500;
+    border-radius: 6px;
+    font-size: 0.875rem;
+}
+
+/* ===============================
+   VISUALS GRID
+================================= */
+.visuals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+}
+.visuals img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ===============================
+   HEADINGS & TEXT
+================================= */
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4f46e5; /* Tailwind indigo-600 */
+}
+.status span {
+    font-weight: 700;
+}
+p {
+    margin: 0.25rem 0;
+}
