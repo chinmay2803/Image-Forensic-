@@ -1,0 +1,25 @@
+# ===== Web App =====
+Flask==3.0.3
+Werkzeug==3.0.3
+
+# ===== Deep Learning =====
+torch==2.3.1
+torchvision==0.18.1
+
+# ===== Image Processing & Forensics =====
+opencv-python==4.10.0.84
+Pillow==10.4.0
+numpy==1.26.4
+
+# ===== Data Handling (used by training scripts) =====
+pandas==2.2.2
+scikit-learn==1.5.1
+
+# ===== Visualization =====
+matplotlib==3.9.0
+
+# ===== PDF Report Generation =====
+reportlab==4.2.2
+
+# ===== Utilities =====
+tqdm==4.66.4
